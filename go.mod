@@ -10,10 +10,9 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.8.0
 	github.com/stretchr/testify v1.6.1
-	go.etcd.io/etcd v0.0.0-20191023171146-3cf2f69b5738
+	go.etcd.io/etcd v0.5.0-alpha.5.0.20200819165624-17cef6e3e9d5
 	k8s.io/api v0.20.0
 	k8s.io/apimachinery v0.20.0
-	sigs.k8s.io/controller-runtime v0.6.4
 	sigs.k8s.io/controller-tools v0.4.1
 	sigs.k8s.io/kustomize/kustomize/v3 v3.9.0
 	sigs.k8s.io/yaml v1.2.0
