@@ -1,0 +1,5 @@
+- name: Code Climate Test Reporter
+  uses: aktions/codeclimate-test-reporter@v1
+  with:
+    codeclimate-test-reporter-id: ${{ cd8aafeb955e03cd81fc404264a5ad3167b4e5f06238cbe0c52328cd79f760ec }}
+    command: after-build
