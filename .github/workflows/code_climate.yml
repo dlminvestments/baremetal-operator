@@ -1,0 +1,6 @@
+- uses: amancevice/setup-code-climate@v0
+  with:
+    cc_test_reporter_id: ${{ cd8aafeb955e03cd81fc404264a5ad3167b4e5f06238cbe0c52328cd79f760ec }}
+- run: cc-test-reporter before-build
+# ...
+- run: cc-test-reporter after-build
