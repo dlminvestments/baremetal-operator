@@ -4,3 +4,32 @@
 - run: cc-test-reporter before-build
 # ...
 - run: cc-test-reporter after-build
+
+name: Test
+on: [push, pull_request]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: before_build
+        uses: caffco/code-climate-github-action@v1.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ cd8aafeb955e03cd81fc404264a5ad3167b4e5f06238cbe0c52328cd79f760ec }}
+        with:
+          run_before_build: 'true'
+      - name: Run tests
+        run: yarn test --coverage
+      - name: collect_coverage
+        uses: caffco/code-climate-github-action@v1.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ cd8aafeb955e03cd81fc404264a5ad3167b4e5f06238cbe0c52328cd79f760ec }}
+        with:
+          collect_coverage: 'true'
+          coverage_file_patterns: |
+            **/*.lcov:lcov
+      - name: after_build
+        uses: caffco/code-climate-github-action@v1.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ cd8aafeb955e03cd81fc404264a5ad3167b4e5f06238cbe0c52328cd79f760ec }}
+        with:
+          run_after_build: 'true'
