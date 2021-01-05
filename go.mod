@@ -5,8 +5,6 @@ go 1.15
 require (
 	github.com/go-logr/logr v0.3.0
 	github.com/go-logr/zapr v0.2.0 // indirect
-	github.com/golangci/golangci-lint v1.33.0
-	github.com/gophercloud/gophercloud v0.15.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.9.0
 	github.com/stretchr/testify v1.6.1
@@ -15,6 +13,6 @@ require (
 	k8s.io/client-go v0.20.1
 	sigs.k8s.io/controller-runtime v0.7.0
 	sigs.k8s.io/controller-tools v0.4.1
-	sigs.k8s.io/kustomize/kustomize/v3 v3.9.0
+	sigs.k8s.io/kustomize/kustomize/v3 v3.9.1
 	sigs.k8s.io/yaml v1.2.0
 )
