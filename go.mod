@@ -7,7 +7,7 @@ require (
 	github.com/go-logr/zapr v0.2.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.9.0
-	github.com/stretchr/testify v1.6.1
+	github.com/stretchr/testify v1.7.0
 	go.etcd.io/etcd v0.5.0-alpha.5.0.20200819165624-17cef6e3e9d5
 	k8s.io/apimachinery v0.20.1
 	k8s.io/client-go v0.20.1
