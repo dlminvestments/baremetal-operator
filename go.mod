@@ -11,7 +11,7 @@ require (
 	go.etcd.io/etcd v0.5.0-alpha.5.0.20200910180754-dd1b699fc489
 	k8s.io/apimachinery v0.20.2
 	k8s.io/client-go v0.20.2
-	sigs.k8s.io/controller-runtime v0.8.0
+	sigs.k8s.io/controller-runtime v0.8.1
 	sigs.k8s.io/controller-tools v0.4.1
 	sigs.k8s.io/kustomize/kustomize/v3 v3.9.2
 	sigs.k8s.io/yaml v1.2.0
