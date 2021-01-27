@@ -3,7 +3,7 @@ module github.com/metal3-io/baremetal-operator
 go 1.15
 
 require (
-	github.com/go-logr/logr v0.3.0
+	github.com/go-logr/logr v0.4.0
 	github.com/go-logr/zapr v0.2.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.9.0
